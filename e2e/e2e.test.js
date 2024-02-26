@@ -19,7 +19,7 @@ beforeAll(async () => {
   });
 
   browser = await puppeteer.launch({
-    headless: false,
+    headless: 'new',
     slowMo: 250,
     args: ['--no-sandbox', '--disable-setuid-sandbox'],
   });
