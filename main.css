@@ -1,0 +1,179 @@
+body {
+  width: 100vh;
+  background-image: url(79c7a0cdeb6a77f4a586.jpg);
+  background-size: 1550px;
+  margin: auto;
+}
+
+.container {
+  position: relative;
+  margin: auto;
+  margin-top: 142px;
+  width: 360px;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.mask_active {
+  position: fixed;
+  top: 0;
+  left: 0;
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 5;
+}
+
+.table {
+  margin-top: 7px;
+  background-color: white;
+  width: 100%;
+  font-size: 16px;
+  border: 1px solid black;
+
+  border-spacing: 10px;
+}
+
+th {
+  padding: 0;
+  text-align: left;
+}
+
+th:last-child {
+  width: 20%;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.addIcon {
+  border: none;
+  background: none;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.popOver_inactive {
+  display: none;
+}
+
+.popOver_active {
+  position: absolute;
+  top: -20px;
+  left: 10px;
+  display: flex;
+  justify-content: center;
+  width: 320px;
+  background-color: white;
+  border: 1px solid black;
+  padding: 10px;
+  z-index: 100;
+}
+
+.popOver_form {
+  width: 90%;
+}
+
+.inputsContainer {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 5px;
+  margin-bottom: 20px;
+}
+
+input {
+  position: relative;
+  height: 25px;
+  border-radius: 10px;
+  padding: 0 5px;
+}
+
+label {
+  align-self: flex-start;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.buttonsContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn {
+  width: 135px;
+  height: 30px;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.saveButton:hover {
+  outline: 1px solid rgb(18, 185, 18);
+  outline-offset: -3px;
+}
+
+.abortButton:hover {
+  outline: 1px solid rgb(212, 34, 34);
+  outline-offset: -3px;
+}
+
+.actionTd {
+  display: flex;
+  gap: 5px;
+}
+
+.editIcon {
+  width: 17px;
+  height: 17px;
+  background-image: url(8efbbb3738e2d14c49b0.png);
+  transform: rotate(280deg);
+  background-size: contain;
+}
+
+.deleteIcon {
+  width: 17px;
+  height: 17px;
+  background-image: url(a16551183524f3ebcaa9.png);
+  background-size: contain;
+}
+
+.messageContainer_inactive {
+  display: none;
+}
+
+.messageContainer_active {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: absolute;
+  top: 22px;
+  left: 10px;
+  justify-content: center;
+  width: 325px;
+  font-size: 16px;
+  background-color: white;
+  border: 1px solid black;
+  padding: 10px;
+  z-index: 100;
+}
+
+.tooltip {
+  align-self: center;
+  position: absolute;
+
+  width: 170px;
+  height: 12px;
+  border: 1px solid rgb(230, 27, 27);
+  background-color: white;
+  text-align: center;
+  padding: 5px;
+  font-size: 11px;
+}
+
+/*# sourceMappingURL=main.css.map*/
